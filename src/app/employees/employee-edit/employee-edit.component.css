@@ -1,0 +1,65 @@
+/* Page background and layout */
+.employee-edit-wrapper {
+    background-color: #f0f7ff; /* Soft blue background */
+    min-height: 100vh;
+    padding: 40px 20px;
+  }
+  
+  /* Card styling */
+  mat-card {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #e3f2fd;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(25, 118, 210, 0.25);
+  }
+  
+  /* Form title */
+  mat-card h2 {
+    text-align: center;
+    color: #1565c0;
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+  }
+  
+  /* Form fields */
+  .full-width {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  /* Back button styling */
+  .back-btn {
+    margin: 0 auto 20px;
+    display: block;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 10px 20px;
+    color: #1565c0;
+    border-color: #1565c0;
+    transition: all 0.2s ease;
+  }
+  
+  .back-btn:hover {
+    background-color: #e3f2fd;
+  }
+  
+  /* Update button styling */
+.update-btn {
+    background-color: #1976d2;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 10px 24px;
+    font-size: 1rem;
+    border-radius: 8px;
+    display: block;
+    margin: 20px auto 0;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .update-btn:hover {
+    background-color: #1565c0;
+    transform: scale(1.03);
+  }
+  

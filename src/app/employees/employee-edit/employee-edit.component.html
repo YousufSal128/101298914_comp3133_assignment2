@@ -1,0 +1,60 @@
+<div class="employee-edit-wrapper">
+  <button mat-stroked-button color="primary" class="back-btn" (click)="goBack()">
+    ← Back to Employee List
+  </button>
+
+  <mat-card>
+    <h2>Edit Employee</h2>
+
+    <form [formGroup]="employeeForm" (ngSubmit)="onSubmit()">
+      <mat-form-field appearance="fill" class="full-width">
+        <mat-label>First Name</mat-label>
+        <input matInput formControlName="first_name" />
+      </mat-form-field>
+
+      <mat-form-field appearance="fill" class="full-width">
+        <mat-label>Last Name</mat-label>
+        <input matInput formControlName="last_name" />
+      </mat-form-field>
+
+      <mat-form-field appearance="fill" class="full-width">
+        <mat-label>Email</mat-label>
+        <input matInput formControlName="email" />
+      </mat-form-field>
+
+      <mat-form-field appearance="fill" class="full-width">
+        <mat-label>Gender</mat-label>
+        <mat-select formControlName="gender">
+          <mat-option value="Male">Male</mat-option>
+          <mat-option value="Female">Female</mat-option>
+          <mat-option value="Other">Other</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill" class="full-width">
+        <mat-label>Designation</mat-label>
+        <input matInput formControlName="designation" />
+      </mat-form-field>
+
+      <mat-form-field appearance="fill" class="full-width">
+        <mat-label>Salary</mat-label>
+        <input matInput type="number" formControlName="salary" />
+      </mat-form-field>
+
+      <mat-form-field appearance="fill" class="full-width">
+        <mat-label>Date of Joining</mat-label>
+        <input matInput type="date" formControlName="date_of_joining" />
+      </mat-form-field>
+
+      <mat-form-field appearance="fill" class="full-width">
+        <mat-label>Department</mat-label>
+        <input matInput formControlName="department" />
+      </mat-form-field>
+
+      <button mat-raised-button color="primary" type="submit" class="update-btn">
+        Update
+      </button>
+      
+    </form>
+  </mat-card>
+</div>

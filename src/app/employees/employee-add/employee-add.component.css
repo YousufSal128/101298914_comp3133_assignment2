@@ -1,0 +1,100 @@
+/* Page background and layout */
+.employee-add-wrapper {
+    background-color: #f0f7ff;
+    min-height: 100vh;
+    padding: 40px 20px;
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  }
+  
+  /* Back button styling */
+  .back-btn {
+    margin: 0 auto 20px;
+    display: block;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 10px 20px;
+    color: #1565c0;
+    border-color: #1565c0;
+    transition: all 0.2s ease;
+    font-size: 1rem;
+  }
+  
+  .back-btn:hover {
+    background-color: #e3f2fd;
+  }
+  
+  /* Card styling */
+  mat-card {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #e3f2fd;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(25, 118, 210, 0.25);
+  }
+  
+  /* Title */
+  mat-card h2 {
+    text-align: center;
+    color: #0d47a1;
+    margin-bottom: 25px;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+  
+  /* Form fields */
+  .full-width {
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 1rem;
+  }
+  
+  /* Native input label */
+  .doj-label {
+    font-weight: 600;
+    color: #0d47a1;
+    margin-bottom: 6px;
+    display: block;
+    font-size: 1rem;
+  }
+  
+  /* Native input styling */
+  .native-input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  /* Submit button */
+  .add-btn {
+    background-color: #1976d2;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 12px 28px;
+    font-size: 1.05rem;
+    border-radius: 8px;
+    display: block;
+    margin: 24px auto 0;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .add-btn:hover {
+    background-color: #1565c0;
+    transform: scale(1.03);
+    cursor: pointer;
+  }
+  
+  /* Error message styling */
+  .error-message {
+    color: #d32f2f;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+  }
+  

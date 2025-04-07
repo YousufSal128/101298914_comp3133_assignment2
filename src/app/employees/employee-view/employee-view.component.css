@@ -1,0 +1,72 @@
+/* Page background wrapper */
+.employee-view-wrapper {
+    background-color: #f3f8fe;
+    min-height: 100vh;
+    padding: 40px 20px;
+  }
+  
+  /* Back button styling */
+  .back-btn {
+    margin: 0 auto 20px;
+    display: block;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 10px 20px;
+    color: #1565c0;
+    border: 1px solid #1565c0;
+    transition: all 0.2s ease;
+  }
+  .back-btn:hover {
+    background-color: #e3f2fd;
+  }
+  
+  /* Main card styling */
+  mat-card {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #e3f2fd;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(25, 118, 210, 0.25);
+  }
+  
+  /* Centered title */
+  mat-card h2 {
+    color: #1565c0;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  /* Photo wrapper & image */
+  .employee-photo {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .employee-photo img {
+    max-width: 180px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Employee details */
+  mat-card div {
+    line-height: 1.8;
+    font-size: 1.05rem;
+    color: #1a237e;
+  }
+  mat-card p strong {
+    color: #0d47a1;
+  }
+  mat-card p {
+    font-size: 1.1rem;
+    color: #1565c0;
+    text-align: center;
+  }
+  

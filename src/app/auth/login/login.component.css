@@ -1,0 +1,70 @@
+/* Fullscreen gradient background */
+.login-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Card with styling */
+  .login-card {
+    width: 100%;
+    max-width: 420px;
+    padding: 2rem;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Title */
+  .login-title {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #2a5298;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Form Fields */
+  .full-width {
+    width: 100%;
+    margin-bottom: 1.2rem;
+  }
+  
+  /* Submit button */
+  .login-button {
+    width: 100%;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 0.6rem;
+    border-radius: 6px;
+  }
+  
+  /* Error message */
+  .error {
+    color: #c62828;
+    text-align: center;
+    margin-top: 0.5rem;
+    font-weight: 500;
+  }
+  
+  /* Signup link text */
+  .signup-link {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 0.95rem;
+    color: #444;
+  }
+  
+  .signup-link a {
+    color: #2a5298;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .signup-link a:hover {
+    text-decoration: underline;
+  }
+  

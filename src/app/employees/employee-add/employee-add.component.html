@@ -1,0 +1,92 @@
+<div class="employee-add-wrapper">
+  <button mat-stroked-button color="primary" class="back-btn" (click)="goBack()">
+    ← Back to Employee List
+  </button>
+
+  <mat-card class="add-card">
+    <h2 class="form-title">Add New Employee</h2>
+
+    <!-- Error Message -->
+    <div *ngIf="errorMessage" class="error-message">
+      {{ errorMessage }}
+    </div>
+
+    <form [formGroup]="employeeForm" (ngSubmit)="onSubmit()">
+
+      <!-- First Name -->
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>First Name</mat-label>
+        <input matInput formControlName="first_name" />
+      </mat-form-field>
+
+      <!-- Last Name -->
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Last Name</mat-label>
+        <input matInput formControlName="last_name" />
+      </mat-form-field>
+
+      <!-- Email -->
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Email</mat-label>
+        <input matInput type="email" formControlName="email" />
+      </mat-form-field>
+
+      <!-- Gender -->
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Gender</mat-label>
+        <mat-select formControlName="gender">
+          <mat-option value="Male">Male</mat-option>
+          <mat-option value="Female">Female</mat-option>
+          <mat-option value="Other">Other</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <!-- Designation -->
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Designation</mat-label>
+        <input matInput formControlName="designation" />
+      </mat-form-field>
+
+      <!-- Salary -->
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Salary</mat-label>
+        <input matInput type="number" formControlName="salary" />
+      </mat-form-field>
+
+      <!-- Date of Joining -->
+      <label for="doj" class="doj-label">Date of Joining</label>
+      <input
+        id="doj"
+        class="full-width native-input"
+        type="date"
+        formControlName="date_of_joining"
+      />
+
+      <!-- Department -->
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Department</mat-label>
+        <input matInput formControlName="department" />
+      </mat-form-field>
+
+      <!-- Profile Picture -->
+      <label class="doj-label">Profile Picture</label>
+      <input
+        type="file"
+        (change)="onFileChange($event)"
+        accept="image/*"
+        class="full-width native-input"
+      />
+
+      <!-- Submit Button -->
+      <button
+        mat-raised-button
+        color="primary"
+        type="submit"
+        class="add-btn"
+        [disabled]="isSubmitting"
+      >
+        {{ isSubmitting ? 'Submitting...' : 'Add Employee' }}
+      </button>
+    </form>
+  </mat-card>
+</div>

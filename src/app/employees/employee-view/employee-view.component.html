@@ -1,0 +1,22 @@
+<mat-card *ngIf="employee">
+  <h2>👤 {{ employee.first_name }} {{ employee.last_name }}</h2>
+
+  <!-- Profile picture -->
+  <div class="employee-photo" *ngIf="employee.employee_photo">
+    <img [src]="employee.employee_photo" alt="Employee Photo" />
+  </div>
+
+  <div>
+    <p><strong>📧 Email:</strong> {{ employee.email }}</p>
+    <p><strong>⚧ Gender:</strong> {{ employee.gender }}</p>
+    <p><strong>💼 Designation:</strong> {{ employee.designation }}</p>
+    <p><strong>🏢 Department:</strong> {{ employee.department }}</p>
+    <p><strong>💲 Salary:</strong> ${{ employee.salary }}</p>
+    <p><strong>📅 Date of Joining:</strong> {{ employee.date_of_joining | date }}</p>
+  </div>
+
+  <button mat-stroked-button color="primary" class="back-btn" (click)="goBack()">
+    ← Back to Employee List
+  </button>
+
+</mat-card>
