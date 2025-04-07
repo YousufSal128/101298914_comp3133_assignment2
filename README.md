@@ -1,6 +1,65 @@
 # 101298914Comp3133Assignment2
+# Employee Management System (GraphQL + Angular + Node.js)
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.5.
+This is a full-stack employee management application built with:
+
+- **Frontend**: Angular + Angular Material
+- **Backend**: Node.js, Express, Apollo Server (GraphQL)
+- **Database**: MongoDB (Mongoose ORM)
+
+---
+
+## 🚀 Features
+
+- User Authentication (JWT)
+- Add/View/Edit/Delete Employees
+- GraphQL API
+- Role-based data access (only see your own employees)
+- Image Upload for Employee Profiles
+- Search by Department or Designation
+- Responsive UI with Angular Material
+
+---
+
+## 🧩 Tech Stack
+
+| Layer       | Technology            |
+|-------------|------------------------|
+| Frontend    | Angular, Angular Material |
+| Backend     | Node.js, Express, Apollo Server |
+| Database    | MongoDB Atlas (via Mongoose) |
+| Auth        | JWT-based authentication |
+| API         | GraphQL |
+| Styling     | SCSS + Material Design |
+
+---
+
+## 📦 Prerequisites
+
+- [Node.js](https://nodejs.org/) (v16 or higher)
+- [Angular CLI](https://angular.io/cli) (v15+)
+- [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) (or local MongoDB)
+
+---
+
+## 🛠️ Installation
+
+### 1. Clone the Repositories
+
+Front End:
+git clone https://github.com/your-username/employee-app-backend.git](https://github.com/YousufSal128/COMP3133_101298914_Assignment1.git)
+Back End:
+git clone https://github.com/your-username/employee-app-frontend.git](https://github.com/YousufSal128/101298914_comp3133_assignment2.git)
+
+
+How to Run:
+
+First run npm install --legacy-peer-deps (Front end)
+then run npm install for Back end too
+
+Go to Back End and run "node server.js"
+
+Next go to Front end and run "ng serve"
 
 ## Development server
 
